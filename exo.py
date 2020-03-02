@@ -26,16 +26,16 @@ print(isprime("test"))
 
 
 # Une fonction qui prend en paramètre un entier et vérifie que ce nombre est divisible par 7 mais pas par 11
-# Exo 1 + : la fonction soit capable de prendre un nombre indéterminé d'entiers et de renvoyer une lite de booléens
+# Exo 1 + : la fonction est capable de prendre un nombre indéterminé d'entiers et de renvoyer une liste de booléens
 
 def exo_1(number: int) -> bool:
     pass
 
+assert exo_1(7) is True
+assert exo_1(11) is False
+
 def exo_1_plus(*numbers: int) -> List(bool):
     pass
-
-assert exo_1(11) is False
-assert exo_1(42) is True
 
 # Exo 2 : La fonction reçoit une liste d'opérations bancaires et renvoie le montant final après toutes les opérations (balance)
 # Bonus mettre un argument optionel pour indiquer le montant sur le compte avant ces opérations
