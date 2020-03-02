@@ -20,3 +20,15 @@ un_dict={
 json.dumps(result)
 
 json.load(json.dumps(result))
+
+with open("./mon_json.json", "w") as mon_fichier:
+    json.dump(result, mon_fichier, sort_keys=True, indent=4)
+
+print(json.dumps(result, sort_keys=True, indent=4))
+
+with open("./mon_json.json", "r") as mon_fichier:
+    data = json.load(mon_fichier)
+
+print(data)
+
+print(result == data)
