@@ -1,6 +1,6 @@
 # coding: utf-8
 
-# Définir une fonction qui prend en paramètre un entier et vérifier que ce nombre est divisible par 7 mais pas par 11
+# Exo 1 : Définir une fonction qui prend en paramètre un entier et vérifier que ce nombre est divisible par 7 mais pas par 11
 # Exo 1 + : la fonction est capable de prendre un nombre indéterminé d'entiers et de renvoyer une liste de booléens
 
 def exo_1(number: int) -> bool:
