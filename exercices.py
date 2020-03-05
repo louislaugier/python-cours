@@ -48,7 +48,7 @@ def exo_2(operations: []) -> int:
 result = exo_2(["D 100", "R 200", "D 50"])
 assert result == 50
 
-def exo_2_plus(operations, initialBalance=0):
+def exo_2_plus(operations: [], initialBalance=0) -> int:
     liste_depenses = []
     liste_revenus = []
     for element in operations: 
@@ -66,7 +66,7 @@ def exo_2_plus(operations, initialBalance=0):
 result = exo_2_plus(["D 100", "R 200", "D 50"], 100)
 result2 = exo_2_plus(["D 100", "R 200", "D 50"])
 assert result == 150
-assert result == 50
+assert result2 == 50
 
 # Exo 3 : Définir une fonction qui reçoit une liste de tuples et qui renvoie une liste triée de ces tuples par points (du plus grand au plus petit)
 # Tuple : ("Prénom"(str), "Points" (int), "Age" (int))
