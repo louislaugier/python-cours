@@ -1,5 +1,4 @@
 # coding: utf-8
-# Pour jeudi soir : clement.tarriere@gmail.com
 
 # Définir une fonction qui prend en paramètre un entier et vérifier que ce nombre est divisible par 7 mais pas par 11
 # Exo 1 + : la fonction est capable de prendre un nombre indéterminé d'entiers et de renvoyer une liste de booléens
@@ -49,7 +48,7 @@ def exo_2(operations: []) -> int:
 result = exo_2(["D 100", "R 200", "D 50"])
 assert result == 50
 
-def exo_2_plus(initialBalance: int, operations: []) -> int:
+def exo_2_plus(operations, initialBalance=0):
     liste_depenses = []
     liste_revenus = []
     for element in operations: 
@@ -61,11 +60,13 @@ def exo_2_plus(initialBalance: int, operations: []) -> int:
             revenus = int(element[2:])
             liste_revenus.append(revenus)
             print ("Exo 2+) Les revenus sont de :",sum(liste_revenus))
-    print ("Exo 2+) Le solde de votre compte est de :", sum(liste_revenus) - sum(liste_depenses))
-    return initialBalance + (sum(liste_revenus) - sum(liste_depenses))
+    print ("Exo 2+) Le solde de votre compte est de :", initialBalance + sum(liste_revenus) - sum(liste_depenses))
+    return initialBalance + sum(liste_revenus) - sum(liste_depenses)
 
-result = exo_2(100, ["D 100", "R 200", "D 50"])
+result = exo_2_plus(["D 100", "R 200", "D 50"], 100)
+result2 = exo_2_plus(["D 100", "R 200", "D 50"])
 assert result == 150
+assert result == 50
 
 # Exo 3 : Définir une fonction qui reçoit une liste de tuples et qui renvoie une liste triée de ces tuples par points (du plus grand au plus petit)
 # Tuple : ("Prénom"(str), "Points" (int), "Age" (int))
