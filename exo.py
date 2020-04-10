@@ -29,7 +29,7 @@ print(isprime("test"))
 # Exo 1 + : la fonction est capable de prendre un nombre indéterminé d'entiers et de renvoyer une liste de booléens
 
 # Exo 2 : La fonction reçoit une liste d'opérations bancaires et renvoie le montant final après toutes les opérations (balance)
-# Exo 2 plus : mettre un argument optionel pour indiquer le montant sur le compte avant ces opérations
+# Exo 2 + : mettre un argument optionel pour indiquer le montant sur le compte avant ces opérations
 
 # Exo 3 : Une fonction qui reçoit une liste de tuples et elle renvoie une liste triée de ces tuples par points (du plus grand au plus petit)
 # Tuple : ("Prénom"(str), "Points" (int), "Age" (int))
