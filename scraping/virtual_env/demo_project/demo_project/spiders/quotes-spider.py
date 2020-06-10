@@ -1,7 +1,8 @@
 import scrapy
+from scrapy.http import FormRequest
 
 class QuotesSpider(scrapy.Spider):
-    name = "quotes"
+    name = "login"
 
     start_urls = [
         'http://quotes.toscrape.com/'
